@@ -2,7 +2,7 @@
  This program checks for the missing/broken/suspicious images in rendered sequence. Here is the list of supported image formats:
 <https://pillow.readthedocs.io/en/stable/handbook/image-file-formats.html>
 
-Suspicious files calculated by comparing current file size with the previous one in the sequence and marked as *Check*. File size anomaly threshold can be adjusted by editing value in anomaly variable. Default is 2Kb
+Suspicious files calculated by comparing current file size with the previous one in the sequence and marked as *Check*. File size anomaly threshold can be adjusted by editing value in anomaly variable. Default is 1Mb
 
 This program written snd tested under Python 3 environment. Also, it may require PIL module, so please install it with `pip install Pillow` command in your terminal window if you're getting a missing module error.
 

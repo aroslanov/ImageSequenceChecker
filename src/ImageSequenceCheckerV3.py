@@ -36,14 +36,15 @@ __version__ = "0.0.3"
 
 anomaly = 10000  # This is file size (in bytes) anomaly threshold, change it to whatever you want
 
-from tkinter import filedialog
-from PIL import Image
 import sys
 import re
 import glob
 import tkinter as tk
 import os
 import PIL
+
+from tkinter import filedialog
+from PIL import Image
 
 root = tk.Tk()
 root.iconify()

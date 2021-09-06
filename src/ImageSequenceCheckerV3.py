@@ -4,7 +4,7 @@ rendered sequence. Here is the list of supported image formats:
 <https://pillow.readthedocs.io/en/stable/handbook/image-file-formats.html>
 Suspicious files calculated by comparing current file size with the
 previous one in the sequence and marked as 'Check'. File size anomaly
-threshold can be adjusted by editing value in anomaly variable. Default is 2Kb
+threshold can be adjusted by editing value in anomaly variable. Default is 1Mb
 This program was written snd tested under Python 3 environment. Also, it may
 require PIL module, so please install it with 'pip install PIL' command in
 your terminal window if you're getting a missing module error.

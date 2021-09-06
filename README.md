@@ -1,4 +1,4 @@
-# ImageSequenceChecker
+# Image Sequence Checker
  Checking images integrity in the rendered sequence
  This program checks for the missing/broken/suspicious images in
 rendered sequence. Here is the list of supported image formats:

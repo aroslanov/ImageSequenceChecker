@@ -42,6 +42,7 @@ import glob
 import tkinter as tk
 import os
 import PIL
+import itertools
 
 from tkinter import filedialog
 from PIL import Image
@@ -83,9 +84,17 @@ file_size = os.path.getsize(first_file)
 
 err_list = []
 
+spinner = itertools.cycle(['-', '\\','|','/'])
+
 for filenum in range(first_file_number_int, last_file_number_int):
+
+    sys.stdout.write(next(spinner))
+    sys.stdout.flush()
+    sys.stdout.write('\b')
+
     num = str(filenum).rjust(padding, '0')
     file_name_generated = base_file_name + num + extension
+
     if not os.path.isfile(file_name_generated):
         msg = 'Missing: ' + os.path.basename(file_name_generated)
         err_list.append(msg)
@@ -104,6 +113,8 @@ for filenum in range(first_file_number_int, last_file_number_int):
             err_list.append(msg)
             print(msg)
     file_size = os.path.getsize(file_name_generated)
+
+print('Checking done')
 
 if len(err_list) == 0:
     print('No errors found')

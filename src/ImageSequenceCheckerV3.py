@@ -103,6 +103,7 @@ for filenum in range(first_file_number_int, last_file_number_int):
             msg = 'Broken:  ' + os.path.basename(file_name_generated)
             err_list.append(msg)
             print(msg)
+    file_size = os.path.getsize(file_name_generated)
 
 if len(err_list) == 0:
     print('No errors found')

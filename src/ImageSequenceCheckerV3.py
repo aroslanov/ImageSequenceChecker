@@ -32,7 +32,7 @@ __email__ = "aroslanov@gmail.com"
 __license__ = "GPLv3"
 __maintainer__ = "developer"
 __status__ = "Production"
-__version__ = "0.0.3"
+__version__ = "0.0.4"
 
 anomaly = 500000  # This is file size (in bytes) anomaly threshold, change it to whatever you want
 

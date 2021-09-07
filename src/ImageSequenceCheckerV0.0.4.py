@@ -104,6 +104,7 @@ for filenum in range(first_file_number_int, last_file_number_int):
         err_list.append(msg)
         print(msg)
     else:
+        file_size = os.path.getsize(file_name_generated)
         try:
             im = Image.open(file_name_generated)
             im.transpose(PIL.Image.FLIP_LEFT_RIGHT)
@@ -112,7 +113,6 @@ for filenum in range(first_file_number_int, last_file_number_int):
             msg = 'Broken:  ' + os.path.basename(file_name_generated)
             err_list.append(msg)
             print(msg)
-    file_size = os.path.getsize(file_name_generated)
 
 print('Checking done')
 

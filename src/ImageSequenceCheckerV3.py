@@ -34,7 +34,7 @@ __maintainer__ = "developer"
 __status__ = "Production"
 __version__ = "0.0.3"
 
-anomaly = 1000000  # This is file size (in bytes) anomaly threshold, change it to whatever you want
+anomaly = 500000  # This is file size (in bytes) anomaly threshold, change it to whatever you want
 
 import sys
 import re

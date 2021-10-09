@@ -84,7 +84,7 @@ file_size = os.path.getsize(first_file)
 
 err_list = []
 
-spinner = itertools.cycle(['-', '\\','|','/'])
+# spinner = itertools.cycle(['-', '\\','|','/'])
 
 for filenum in range(first_file_number_int, last_file_number_int):
 

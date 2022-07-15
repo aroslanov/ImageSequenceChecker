@@ -49,7 +49,7 @@ root = tk.Tk()
 root.iconify()
 
 #request user input for anomaly value, if it's empty, keep old value
-anomaly = input("Enter file size anomaly threshold (in bytes or megabytes, like 1100000, 1100K or 1.1M, default value is 500K: ")
+anomaly = input("Enter file size anomaly threshold (in bytes, kilobytes or megabytes, like 1100000, 1100K or 1.1M, default value is 500K: ")
 
 
 if re.search(r'\d+', anomaly): #check if anomaly string contains a number

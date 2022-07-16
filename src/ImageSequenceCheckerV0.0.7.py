@@ -69,7 +69,7 @@ else:
     print("Invalid value for anomaly threshold. Please try again.")
     sys.exit()
 
-print("Anomaly threshold is set to: " + str(anomaly)) + " bytes"
+print("Anomaly threshold is set to: " + str(anomaly) + " bytes")
 
 picked_file_name = filedialog.askopenfilename(
     title='Select any file in a sequence')
@@ -143,7 +143,7 @@ print('Checking done')
 if len(err_list) == 0:
     print('No errors found')
 else:
-    from tkinter.messagebox import askyesno
+    from tkinter.messagebox import askyesno 
     if askyesno(title='confirmation', message='Would you like to save a report?'):
         from tkinter.filedialog import asksaveasfilename
         report_file_name = asksaveasfilename(defaultextension='.txt', filetypes=[(

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>529</width>
-    <height>371</height>
+    <height>354</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -20,7 +20,7 @@
    <string>Image sequence checker</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="lineEditFileName">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -46,7 +46,7 @@
      <string>Select image sequence (you may click on any file in sequence):</string>
     </property>
    </widget>
-   <widget class="QToolButton" name="toolButton">
+   <widget class="QToolButton" name="toolButtonChooseFileName">
     <property name="geometry">
      <rect>
       <x>490</x>
@@ -62,8 +62,8 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>200</y>
+      <x>10</x>
+      <y>190</y>
       <width>131</width>
       <height>16</height>
      </rect>
@@ -72,11 +72,11 @@
      <string>Output console:</string>
     </property>
    </widget>
-   <widget class="QPlainTextEdit" name="plainTextEdit">
+   <widget class="QPlainTextEdit" name="plainTextEditOutputConsole">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>220</y>
+      <y>210</y>
       <width>511</width>
       <height>121</height>
      </rect>
@@ -91,7 +91,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox">
+   <widget class="QCheckBox" name="checkBoxMissing">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -107,7 +107,7 @@
      <string>Check for missing files in a sequence</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_2">
+   <widget class="QCheckBox" name="checkBoxAnomalies">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -123,7 +123,7 @@
      <string>Check for file size anomalies, threshold is:</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="pushButtonStartStop">
     <property name="geometry">
      <rect>
       <x>230</x>
@@ -139,7 +139,7 @@
      <string>Start!</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="lineEditAnomalySize">
     <property name="geometry">
      <rect>
       <x>260</x>
@@ -155,7 +155,7 @@
      <string>Could be in bytes (500000), kilobytes (500K) or megabytes (0.5M)</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_3">
+   <widget class="QCheckBox" name="checkBoxBroken">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -171,7 +171,7 @@
      <string>Check for broken files</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_4">
+   <widget class="QCheckBox" name="checkBoxSaveDefaults">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -187,7 +187,7 @@
      <string>Save current settings as defaults</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton">
+   <widget class="QRadioButton" name="radioButtonBytes">
     <property name="geometry">
      <rect>
       <x>350</x>
@@ -206,7 +206,7 @@
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_2">
+   <widget class="QRadioButton" name="radioButtonKilobytes">
     <property name="geometry">
      <rect>
       <x>410</x>
@@ -225,7 +225,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_3">
+   <widget class="QRadioButton" name="radioButtonMegabytes">
     <property name="geometry">
      <rect>
       <x>460</x>
@@ -242,34 +242,37 @@
     </property>
    </widget>
    <widget class="QProgressBar" name="progressBar">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>170</y>
       <width>511</width>
-      <height>23</height>
+      <height>16</height>
      </rect>
     </property>
     <property name="value">
-     <number>24</number>
+     <number>0</number>
     </property>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <tabstops>
-  <tabstop>lineEdit</tabstop>
-  <tabstop>toolButton</tabstop>
-  <tabstop>checkBox</tabstop>
-  <tabstop>checkBox_2</tabstop>
-  <tabstop>lineEdit_2</tabstop>
-  <tabstop>radioButton</tabstop>
-  <tabstop>radioButton_2</tabstop>
-  <tabstop>radioButton_3</tabstop>
-  <tabstop>checkBox_3</tabstop>
-  <tabstop>checkBox_4</tabstop>
-  <tabstop>pushButton</tabstop>
-  <tabstop>plainTextEdit</tabstop>
+  <tabstop>lineEditFileName</tabstop>
+  <tabstop>toolButtonChooseFileName</tabstop>
+  <tabstop>checkBoxMissing</tabstop>
+  <tabstop>checkBoxAnomalies</tabstop>
+  <tabstop>lineEditAnomalySize</tabstop>
+  <tabstop>radioButtonBytes</tabstop>
+  <tabstop>radioButtonKilobytes</tabstop>
+  <tabstop>radioButtonMegabytes</tabstop>
+  <tabstop>checkBoxBroken</tabstop>
+  <tabstop>checkBoxSaveDefaults</tabstop>
+  <tabstop>pushButtonStartStop</tabstop>
+  <tabstop>plainTextEditOutputConsole</tabstop>
  </tabstops>
  <resources/>
  <connections/>

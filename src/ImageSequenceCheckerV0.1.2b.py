@@ -160,7 +160,6 @@ class Ui_MainWindow(object):
          #if lineEditFileName is not empty, and this file exists
         if self.lineEditFileName.text() != '' and os.path.isfile(self.lineEditFileName.text()):
             MainWindow.setEnabled(False) #disable main window
-            app.processEvents() #process events (update the GUI)
             self.checkSequence() #check the sequence
             self.saveDefaults() #save current settings as defaults
             MainWindow.setEnabled(True) #enable main window
@@ -231,6 +230,8 @@ class Ui_MainWindow(object):
         err_list = [] #list of files with errors
 
         for filenum in range(first_file_number_int, last_file_number_int): #for each file in the sequence
+            
+            app.processEvents() #process events (update the GUI)
 
             num = str(filenum).rjust(padding, '0') #pad the number with zeros
             file_name_generated = base_file_name + num + extension #generate the file name

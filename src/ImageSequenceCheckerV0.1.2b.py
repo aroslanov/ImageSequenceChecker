@@ -149,7 +149,7 @@ class Ui_MainWindow(object):
 
 
     def chooseFileName(self):
-        fileName = QtWidgets.QFileDialog.getOpenFileName(None, 'Open file sequence', MainWindow.path, 'Image files (*.jpg *.jpeg *.png *.bmp *.tiff *.tif *.gif)')
+        fileName = QtWidgets.QFileDialog.getOpenFileName(None, 'Open file sequence', MainWindow.path, 'Image files (*.jpg *.jpeg *.png *.bmp *.tiff *.tif *.gif *.psd *.webp *.pixar *.dds *.j2p *.jpx *.2k)')
         #if sequenceName is not empty, set the file name in the line edit
         if fileName[0] != '':
             self.lineEditFileName.setText(fileName[0])
@@ -230,7 +230,7 @@ class Ui_MainWindow(object):
         err_list = [] #list of files with errors
 
         for filenum in range(first_file_number_int, last_file_number_int): #for each file in the sequence
-            
+
             app.processEvents() #process events (update the GUI)
 
             num = str(filenum).rjust(padding, '0') #pad the number with zeros

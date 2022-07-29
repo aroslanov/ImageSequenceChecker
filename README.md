@@ -1,11 +1,9 @@
 # Image Sequence Checker
- This program checks for the missing/broken/suspicious images in rendered sequence. Here is the list of supported image formats:
-<https://pillow.readthedocs.io/en/stable/handbook/image-file-formats.html>
+ This program checks for the missing/broken/suspicious images in rendered sequence. It supports major graphic file formats (supported by PIL library)
 
-Suspicious files calculated by comparing current file size with the previous one in the sequence and marked as *Check*. File size anomaly threshold can be adjusted by editing value in anomaly variable. Default is 500Kb.
+Suspicious files calculated by comparing current file size with the previous one in the sequence. File size anomaly threshold is the diffeence between next and previous file in sequence.
 
-This program written and tested under Python 3 Windows 10 environment> but should work on any desktop platform supported by Python 3. It requires PIL module, so please install it with `pip install Pillow` command in your terminal window if you're getting a missing module error.
+This program written and tested in Python 3 under Windows 10 environment, but should work on any other desktop platforms supported by Python 3 (like Mac OS or Linux). Requirements are in requirements.txt file. (run `pip install -r requirements.txt` befor running, if you use python source) Also, windows executable is available in releases section. 
 
-How to use: Pick any file in the sequence you want to check. Inage Sequence Checker will offer to save a report file after checking is finished if any errors were found. 
-
+**How to use:** Pick any file in the sequence you want to check. Image Sequence Checker will offer to save a report file after checki is finished if any errors found. 
 _Note: it's not necessary to pick a very first file, program will find one automatically._

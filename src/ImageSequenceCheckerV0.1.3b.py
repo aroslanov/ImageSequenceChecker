@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 """ This program checks for the missing/broken/suspicious images in
-rendered sequence. Here is the list of supported image formats:
-<https://pillow.readthedocs.io/en/stable/handbook/image-file-formats.html>
+rendered sequence.
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
 Foundation, either version 3 of the License, or (at your option) any later
@@ -14,14 +13,14 @@ this program. If not, see <http://www.gnu.org/licenses/>.
 """
 __author__ = "Timur Aroslanov"
 __contact__ = "aroslanov@gmail.com"
-__copyright__ = "Copyright 2021, Timur Aroslanov"
-__date__ = "2022/07/22"
+__copyright__ = "Copyright 2021-2022, Timur Aroslanov"
+__date__ = "2022/07/28"
 __deprecated__ = False
 __email__ = "aroslanov@gmail.com"
 __license__ = "GPLv3"
 __maintainer__ = "developer"
 __status__ = "Beta"
-__version__ = "0.1.1 Beta"
+__version__ = "0.1.3 Beta"
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox
